@@ -21,3 +21,7 @@
 <img src='https://i.imgur.com/Ie8ahiP.jpg' />
 <h5>• Selling Window</h5>
 <img src='https://i.imgur.com/Jye1nfv.jpg' />
+<h5>• Store Window</h5>
+<img src='https://i.imgur.com/z81jrGa.jpg' />
+
+<p><b>PS:</b> There are other interfaces, I didn't list all of them, and sorry for the bad quality.</p>
