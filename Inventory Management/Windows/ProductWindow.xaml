@@ -1,0 +1,100 @@
+﻿<Window x:Class="Inventory_Management.Windows.ProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:usrc="clr-namespace:Inventory_Management.Windows.Fragments"
+        xmlns:c="clr-namespace:Inventory_Management.Windows.Controls"
+        Title="نافذة معلومات المنتوج" Height="600" Width="800">
+    <Grid>
+        <DockPanel Background="#e3f2fd">
+            <!--Header-->
+            <usrc:HeaderFragment DockPanel.Dock="Top" />
+            <!--Body-->
+            <DockPanel     
+                    LastChildFill="False"
+                    FlowDirection="RightToLeft"
+                    DockPanel.Dock="Top">
+                <!--Sub Title-->
+                <TextBlock Padding="10"
+                          Name="txt_subheader"
+                           Background="#FF4CAF50"
+                           Foreground="White"
+                           FontSize="16"
+                           TextAlignment="Center"
+                           DockPanel.Dock="Top">اضافة/تعديل منتج</TextBlock>
+                <!--Form-->
+                <DockPanel DockPanel.Dock="Top" Margin="20, 20, 20, 0">
+                    <!--First Row-->
+                    <Grid DockPanel.Dock="Top">
+                        <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                        
+                        <StackPanel Grid.Column="0" Orientation="Vertical" Margin="10, 0, 10, 0">
+                            <TextBlock Style="{StaticResource ResourceKey=lbl_input}">اسم المنتج</TextBlock>
+                            <TextBox Name="txt_name" Style="{StaticResource ResourceKey=in_standard}"></TextBox>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1">
+                            <TextBlock Style="{StaticResource ResourceKey=lbl_input}">رقم المنتج</TextBlock>
+                            <TextBox Name="txt_code" Style="{StaticResource ResourceKey=in_standard}"></TextBox>
+                        </StackPanel>
+                    </Grid>
+                    <!--Second Row-->
+                    <Grid DockPanel.Dock="Top">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0" Orientation="Vertical" Margin="10, 0, 10, 0">
+                            <TextBlock Style="{StaticResource ResourceKey=lbl_input}">ثمن الشراء</TextBlock>
+                            <TextBox Name="txt_price_in" Style="{StaticResource ResourceKey=in_standard}"></TextBox>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1">
+                            <TextBlock Style="{StaticResource ResourceKey=lbl_input}">ثمن البيع</TextBlock>
+                            <TextBox Name="txt_price_out" Style="{StaticResource ResourceKey=in_standard}"></TextBox>
+                        </StackPanel>
+                    </Grid>
+                    <!--Second Row-->
+                    <Grid DockPanel.Dock="Top">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0" Orientation="Vertical" Margin="10, 0, 10, 0">
+                            <TextBlock Style="{StaticResource ResourceKey=lbl_input}">صنف المنتج</TextBlock>
+                            <ComboBox Name="cb_category" Style="{StaticResource ResourceKey=cb_standard}"></ComboBox>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1">
+                            <TextBlock Style="{StaticResource ResourceKey=lbl_input}">عدد الوحدات</TextBlock>
+                            <TextBox Name="txt_quantity" Style="{StaticResource ResourceKey=in_standard}"></TextBox>
+                        </StackPanel>
+                    </Grid>
+                    <Grid DockPanel.Dock="Top">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0" Orientation="Vertical" Margin="10, 0, 10, 0">
+                            <TextBlock Style="{StaticResource ResourceKey=lbl_input}">صورة المنتج</TextBlock>
+                            <c:Btn BtnText="اختر الصورة" 
+                                   Backcolor="{StaticResource ResourceKey=Blue}"
+                                   x:Name="btn_browse"
+                                   Margin="0, 10, 0, 0" />
+                        </StackPanel>
+                    </Grid>
+                </DockPanel>
+                <!--Submit Button-->
+                <c:Btn BtnText="اضافة المنتوج"
+                       x:Name="btn_add"
+                       DockPanel.Dock="Bottom" 
+                       HorizontalAlignment="Left"
+                       Margin="30, 0, 0, 30"
+                       ImgSource="../../Icons/outline_add_circle_white_48dp.png"
+                       Backcolor="{StaticResource ResourceKey=Green}"/>
+            </DockPanel>
+        </DockPanel>
+    </Grid>
+</Window>

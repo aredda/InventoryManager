@@ -1,0 +1,99 @@
+﻿<Window x:Class="Inventory_Management.Windows.HistoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:f="clr-namespace:Inventory_Management.Windows.Fragments"
+        xmlns:c="clr-namespace:Inventory_Management.Windows.Controls"
+        Title="نافذة الأرشيف" Height="600" Width="800">
+    <DockPanel LastChildFill="True" Background="{StaticResource ResourceKey=LightBlue}">
+        <!--Header-->
+        <f:HeaderFragment DockPanel.Dock="Top" />
+        <!--Sub Header-->
+        <TextBlock Padding="10"
+                           Background="#FF4CAF50"
+                           Foreground="White"
+                           FontSize="16"
+                           TextAlignment="Center"
+                           DockPanel.Dock="Top">الأرشيف</TextBlock>
+        <!--Footer-->
+        <DockPanel DockPanel.Dock="Bottom" Margin="25">
+            <Grid FlowDirection="RightToLeft">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                
+                <StackPanel Orientation="Vertical" Grid.Column="0">
+                    <TextBlock Style="{StaticResource ResourceKey=lbl_h2}">عدد المنتوجات</TextBlock>
+                    <TextBlock Name="lbl_product_counter" Foreground="{StaticResource ResourceKey=Blue}" Style="{StaticResource ResourceKey=lbl_input}">Something</TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Grid.Column="1">
+                    <TextBlock Style="{StaticResource ResourceKey=lbl_h2}">مجموع عدد الوحدات</TextBlock>
+                    <TextBlock Name="lbl_quantity_counter" Foreground="{StaticResource ResourceKey=Blue}" Style="{StaticResource ResourceKey=lbl_input}">Something</TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Grid.Column="2">
+                    <TextBlock Style="{StaticResource ResourceKey=lbl_h2}">المجموع</TextBlock>
+                    <TextBlock Name="lbl_total" Foreground="{StaticResource ResourceKey=Blue}" Style="{StaticResource ResourceKey=lbl_input}">Something</TextBlock>
+                </StackPanel>
+            </Grid>
+        </DockPanel>
+        <!--Body-->
+        <DockPanel DockPanel.Dock="Top" 
+                   LastChildFill="True"
+                   FlowDirection="RightToLeft">
+            
+            <Grid DockPanel.Dock="Top" Margin="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                
+                <StackPanel Orientation="Vertical" Grid.Column="0">
+                    <TextBlock Style="{StaticResource ResourceKey=lbl_input}">أرشيف:</TextBlock>
+                    <ComboBox Name="cb_direction" Style="{StaticResource ResourceKey=cb_standard}">
+                        <ComboBoxItem>المبيعات</ComboBoxItem>
+                        <ComboBoxItem>المشتريات</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+                
+                <StackPanel Margin="20, 0" Orientation="Vertical" Grid.Column="1">
+                    <TextBlock Style="{StaticResource ResourceKey=lbl_input}">من</TextBlock>
+                    <DatePicker Name="dt_start" Style="{StaticResource ResourceKey=my-10}" />
+                </StackPanel>
+                
+                <StackPanel Orientation="Vertical" Grid.Column="2">
+                    <TextBlock Style="{StaticResource ResourceKey=lbl_input}">الى</TextBlock>
+                    <DatePicker Name="dt_end" Style="{StaticResource ResourceKey=my-10}" />
+                </StackPanel>
+                
+                <c:Btn Grid.Column="3" 
+                       x:Name="btn_search"
+                       Backcolor="{StaticResource ResourceKey=Blue}"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Stretch"
+                       Margin="20, 0, 0, 0"
+                       BtnText="ابحث"
+                       ImgSource="../../Icons/outline_search_white_48dp.png"/>
+            </Grid>         
+            
+            <DataGrid Name="dg_details" 
+                      DockPanel.Dock="Top"
+                      Margin="20, 0">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Product.Code}" Width="*" Header="رقم المنتج" />
+                    <DataGridTextColumn Binding="{Binding Product.Label}" Width="*" Header="اسم المنتج" />
+                    <DataGridTextColumn Binding="{Binding Quantity}" Width="*" Header="العدد" />
+                    <DataGridTextColumn Binding="{Binding Price}" Width="*" Header="الثمن" />
+                    <DataGridTextColumn Binding="{Binding Discount}" Width="*" Header="تخفيض" />
+                    <DataGridTextColumn Binding="{Binding Total}" Width="*" Header="المجموع" />
+                    <DataGridTextColumn Binding="{Binding Order.DirectionString}" Width="*" Header="النوع" />
+                    <DataGridTextColumn Binding="{Binding Order.Client}" Width="*" Header="العميل" />
+                    <DataGridTextColumn Binding="{Binding Order.ShortDate}" Width="*" Header="التاريخ" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </DockPanel>
+        
+    </DockPanel>
+</Window>

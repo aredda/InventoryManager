@@ -1,0 +1,131 @@
+﻿<Window x:Class="Inventory_Management.Windows.SellWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:usrc="clr-namespace:Inventory_Management.Windows.Fragments"
+        xmlns:cntrl="clr-namespace:Inventory_Management.Windows.Controls"
+        Title="نافذة البيع" Height="650" Width="900">
+    <DockPanel LastChildFill="True" Background="#e3f2fd">
+        <!--Header-->
+        <usrc:HeaderFragment DockPanel.Dock="Top" />
+        <!--Footer-->
+        <DockPanel DockPanel.Dock="Bottom" Margin="25, 5, 25, 20" FlowDirection="RightToLeft">
+
+            <cntrl:Btn Backcolor="{StaticResource ResourceKey=Green}"
+                       x:Name="btn_sell"
+                       BtnText="أتمم البيع"
+                       HorizontalAlignment="Left"
+                       ImgSource="../../Icons/outline_attach_money_white_48dp.png"/>
+
+            <StackPanel HorizontalAlignment="Right" Orientation="Vertical">
+                <TextBlock Foreground="{StaticResource ResourceKey=Green}"
+                           Style="{StaticResource ResourceKey=lbl_input}">المجموع</TextBlock>
+                <TextBlock Name="lbl_total" 
+                           Style="{StaticResource ResourceKey=lbl_h1}" 
+                           Foreground="{StaticResource ResourceKey=Blue}" />
+            </StackPanel>
+
+        </DockPanel>
+        <!--Body-->
+        <DockPanel DockPanel.Dock="Top" 
+                   LastChildFill="True"
+                   FlowDirection="RightToLeft">
+            <!--Sub Title-->
+            <TextBlock Padding="10"
+                           Background="#FF4CAF50"
+                           Foreground="White"
+                           FontSize="16"
+                           TextAlignment="Center"
+                           DockPanel.Dock="Top">بيع</TextBlock>
+            <!--gRID-->
+            <Grid Margin="20, 20, 20, 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="1.5*" />
+                </Grid.ColumnDefinitions>
+
+                <!--Right-->
+                <DockPanel Grid.Column="0" 
+                           LastChildFill="True"
+                           Margin="0, 0, 0, 10">
+                    
+                    <!--Client section-->
+                    <StackPanel Orientation="Vertical" DockPanel.Dock="Top">
+                        <TextBlock VerticalAlignment="Center" Style="{StaticResource ResourceKey=lbl_input}" Grid.Column="0">اسم العميل - ضروري</TextBlock>
+                        <TextBox Name="txt_client" Style="{StaticResource ResourceKey=in_standard}" Grid.Column="1"></TextBox>
+                    </StackPanel>
+
+                    <Grid DockPanel.Dock="Bottom" Margin="0, 10, 0, 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1.25*" />
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0" Orientation="Vertical">
+                            <TextBlock Style="{StaticResource ResourceKey=lbl_input}">العدد</TextBlock>
+                            <TextBox Name="txt_quantity"
+                                     Style="{StaticResource ResourceKey=in_standard}"></TextBox>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="1" Orientation="Vertical" Margin="10, 0">
+                            <TextBlock Style="{StaticResource ResourceKey=lbl_input}">تخفيض %</TextBlock>
+                            <TextBox Name="txt_discount" Style="{StaticResource ResourceKey=in_standard}"></TextBox>
+                        </StackPanel>
+
+                        <cntrl:Btn Grid.Column="2" 
+                                   x:Name="btn_add"
+                                   VerticalAlignment="Bottom"
+                                   HorizontalAlignment="Stretch"
+                                   BtnText="أضف"
+                                   ImgSource="../../Icons/sharp_arrow_back_white_48dp.png"
+                                   Backcolor="{StaticResource ResourceKey=Blue}"/>
+                    </Grid>
+
+                    <DockPanel DockPanel.Dock="Bottom" 
+                               LastChildFill="True">
+                        <TextBlock DockPanel.Dock="Top" Style="{StaticResource ResourceKey=lbl_input}">رقم المنتج</TextBlock>
+                        <TextBox DockPanel.Dock="Top" Name="txt_code" Style="{StaticResource ResourceKey=in_standard}"></TextBox>
+                        <DataGrid Name="dg_inventory" >
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{Binding Code}" Width="*" Header="رقم المنتج" />
+                                <DataGridTextColumn Binding="{Binding Label}" Width="*" Header="اسم المنتج" />
+                                <DataGridTextColumn Binding="{Binding PriceOut}" Width="*" Header="ثمن البيع" />
+                                <DataGridTextColumn Binding="{Binding Quantity}" Width="*" Header="العدد" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </DockPanel>
+                    
+                </DockPanel>
+                
+                <!--Left-->
+                <DockPanel Grid.Column="1" Margin="10, 0, 10, 10">
+                    <TextBlock DockPanel.Dock="Top" Style="{StaticResource ResourceKey=lbl_input}">المنتوجات المقصودة بالبيع</TextBlock>
+
+                    <!--Cancel button-->
+                    <cntrl:Btn 
+                        DockPanel.Dock="Bottom"
+                        x:Name="btn_cancel"
+                        BtnText="الغاء"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Left"
+                        Backcolor="{StaticResource ResourceKey=Red}"
+                        ImgSource="../../Icons/sharp_arrow_forward_white_48dp.png"/>
+
+                    <!--The Data Grid-->
+                    <DataGrid  Name="dg_command" 
+                               DockPanel.Dock="Top"
+                               Margin="0, 10">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding Product.Code}" Width="*" Header="رقم المنتج" />
+                            <DataGridTextColumn Binding="{Binding Product.Label}" Width="*" Header="اسم المنتج" />
+                            <DataGridTextColumn Binding="{Binding Product.PriceOut}" Width="*" Header="ثمن البيع" />
+                            <DataGridTextColumn Binding="{Binding Quantity}" Width="*" Header="العدد" />
+                            <DataGridTextColumn Binding="{Binding Discount}" Width="*" Header="تخفيض" />
+                            <DataGridTextColumn Binding="{Binding Total}" Width="*" Header="المجموع" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </DockPanel>
+            </Grid>
+        </DockPanel>
+    </DockPanel>
+</Window>

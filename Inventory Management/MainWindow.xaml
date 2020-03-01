@@ -1,0 +1,100 @@
+﻿<Window x:Class="Inventory_Management.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:usrc="clr-namespace:Inventory_Management.Windows.Fragments"
+        xmlns:c="clr-namespace:Inventory_Management.Windows.Controls"
+        Title="النافذة الرئيسية" Height="600" Width="900">
+    <Grid>
+        <DockPanel Background="#e3f2fd">
+            <!--Header-->
+            <usrc:HeaderFragment DockPanel.Dock="Top" />
+            <!--Body-->
+            <DockPanel     
+                    Margin="20"
+                    FlowDirection="RightToLeft"
+                    LastChildFill="True"
+                    DockPanel.Dock="Bottom">
+                <!--Right Section-->
+                <StackPanel Orientation="Vertical">
+                    <!--Add Product-->
+                    <c:Btn Backcolor="{StaticResource ResourceKey=Green}"
+                           x:Name="btn_add_product"
+                           Margin="0, 0, 0, 10"
+                           BtnText="اضافة منتوج"
+                           ImgSource="../../Icons/outline_add_circle_white_48dp.png"/>
+                    <!--Add Category-->
+                    <c:Btn Backcolor="{StaticResource ResourceKey=Green}"
+                           x:Name="btn_add_category"
+                           Margin="0, 0, 0, 10"
+                           BtnText="اضافة صنف"
+                           ImgSource="../../Icons/outline_add_circle_white_48dp.png"/>
+                    <!-- Sell -->
+                    <c:Btn Backcolor="{StaticResource ResourceKey=Green}"
+                           x:Name="btn_sell"
+                           Margin="0, 0, 0, 10"
+                           BtnText="بيع منتوج"
+                           ImgSource="../../Icons/outline_attach_money_white_48dp.png"/>
+                    <!--Product List-->
+                    <c:Btn Backcolor="{StaticResource ResourceKey=Green}"
+                           x:Name="btn_store"
+                           Margin="0, 0, 0, 10"
+                           BtnText="المتجر"
+                           ImgSource="../../Icons/outline_store_white_48dp.png"/>
+                    <!-- Archive -->
+                    <c:Btn Backcolor="{StaticResource ResourceKey=Green}"
+                           x:Name="btn_history"
+                           Margin="0, 0, 0, 10"
+                           BtnText="الأرشيف"
+                           ImgSource="../../Icons/sharp_archive_white_48dp.png"/>
+                </StackPanel>
+                <!--Left Section-->
+                <Grid FlowDirection="RightToLeft">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <!--Top Section-->
+                    <DockPanel Margin="20, 0, 0, 20"
+                               Grid.Row="0"
+                               DockPanel.Dock="Top"
+                               LastChildFill="True"
+                               FlowDirection="RightToLeft">
+                        <TextBlock DockPanel.Dock="Top" FontWeight="ExtraBold" Foreground="#FF4CAF50" FontSize="18">اخر الاضافات</TextBlock>
+                        <DataGrid Name="dg_purchase" DockPanel.Dock="Top" Margin="0, 10, 0, 0">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Width="*" Binding="{Binding Product.Code}" Header="رقم المنتج"/>
+                                <DataGridTextColumn Width="*" Binding="{Binding Product.Label}" Header="اسم المنتج"/>
+                                <DataGridTextColumn Width="*" Binding="{Binding Quantity}" Header="الكمية"/>
+                                <DataGridTextColumn Width="*" Binding="{Binding Price}" Header="ثمن الشراء"/>
+                                <DataGridTextColumn Width="*" Binding="{Binding Total}" Header="المجموع"/>
+                                <DataGridTextColumn Width="*" Binding="{Binding Order.ShortDate}" Header="تاريخ الاضافة"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </DockPanel>
+                    <!--Bottom Section-->
+                    <DockPanel Margin="20, 0, 0, 20"
+                               DockPanel.Dock="Bottom"
+                               Grid.Row="1"
+                               FlowDirection="RightToLeft">
+                        <TextBlock DockPanel.Dock="Top" 
+                                   FontWeight="ExtraBold" 
+                                   Foreground="#FF4CAF50" 
+                                   FontSize="18">اخر المبيعات</TextBlock>
+                        <DataGrid Name="dg_sell" VerticalAlignment="Stretch" MaxHeight="300" HorizontalAlignment="Stretch" DockPanel.Dock="Bottom" Margin="0, 10, 0, 0">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Width="*" Binding="{Binding Product.Code}" Header="رقم المنتج"/>
+                                <DataGridTextColumn Width="*" Binding="{Binding Product.Label}" Header="اسم المنتج"/>
+                                <DataGridTextColumn Width="*" Binding="{Binding Quantity}" Header="الكمية"/>
+                                <DataGridTextColumn Width="*" Binding="{Binding Discount}" Header="التخفيض"/>
+                                <DataGridTextColumn Width="*" Binding="{Binding Price}" Header="ثمن البيع"/>
+                                <DataGridTextColumn Width="*" Binding="{Binding Total}" Header="المجموع"/>
+                                <DataGridTextColumn Width="*" Binding="{Binding Order.Client}" Header="العميل"/>
+                                <DataGridTextColumn Width="*" Binding="{Binding Order.ShortDate}" Header="تاريخ البيع"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </DockPanel>
+                </Grid>
+            </DockPanel>
+        </DockPanel>
+    </Grid>
+</Window>

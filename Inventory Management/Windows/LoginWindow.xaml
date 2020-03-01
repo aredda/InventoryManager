@@ -1,0 +1,41 @@
+﻿<Window x:Class="Inventory_Management.Windows.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:f="clr-namespace:Inventory_Management.Windows.Fragments"
+        xmlns:c="clr-namespace:Inventory_Management.Windows.Controls"
+        Title="نافذة الدخول" Height="500" Width="800">
+    <DockPanel Background="{StaticResource ResourceKey=LightBlue}">
+        <!--Header-->
+        <f:HeaderFragment x:Name="hf_header" DockPanel.Dock="Top" />
+        <!--Sub Header-->
+        <TextBlock Padding="10"
+                   Background="#FF4CAF50"
+                   Foreground="White"
+                   FontSize="16"
+                   TextAlignment="Center"
+                   DockPanel.Dock="Top">تسجيل الدخول</TextBlock>
+        <!--Body-->
+        <DockPanel DockPanel.Dock="Top">
+            
+            <StackPanel FlowDirection="RightToLeft"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Center"
+                        Margin="150, 0">
+                
+                <TextBlock Style="{StaticResource ResourceKey=lbl_input}" Text="اسم الدخول" />
+                <TextBox Name="txt_username" Style="{StaticResource ResourceKey=in_standard}" />
+
+                <TextBlock Style="{StaticResource ResourceKey=lbl_input}" Text="كلمة المرور" />
+                <PasswordBox Name="txt_password" Padding="5" Margin="0, 10" />
+                
+                <c:Btn BtnText="سجل الدخول"
+                       x:Name="btn_signin"
+                       HorizontalAlignment="Left"
+                       ImgSource="../../Icons/outline_exit_to_app_white_48dp.png"
+                       Backcolor="{StaticResource ResourceKey=Blue}" />
+
+            </StackPanel>
+            
+        </DockPanel>
+    </DockPanel>
+</Window>

@@ -1,0 +1,107 @@
+﻿<Window x:Class="Inventory_Management.Windows.StoreWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:usrc="clr-namespace:Inventory_Management.Windows.Fragments"
+        xmlns:cntrl="clr-namespace:Inventory_Management.Windows.Controls"
+        Title="نافذة المتجر" Height="600" Width="800">
+    <DockPanel Background="#e3f2fd" LastChildFill="True">
+        <!--Header-->
+        <usrc:HeaderFragment DockPanel.Dock="Top" />
+        <!--Control-->
+        <StackPanel DockPanel.Dock="Bottom" 
+                    Orientation="Horizontal" 
+                    FlowDirection="RightToLeft"
+                    Margin="20">
+            <cntrl:Btn x:Name="btn_add"
+                       VerticalAlignment="Bottom"
+                       Backcolor="{StaticResource ResourceKey=Green}"
+                       ImgSource="../../Icons/outline_add_circle_white_48dp.png"
+                       BtnText="اضافة منتوج جديد" />
+            <cntrl:Btn x:Name="btn_edit"
+                       VerticalAlignment="Bottom"
+                       Backcolor="{StaticResource ResourceKey=Blue}"
+                       Margin="10, 0"
+                       ImgSource="../../Icons/outline_create_white_48dp.png"
+                       BtnText="تعديل" />
+            <!--
+            <cntrl:Btn x:Name="btn_delete"
+                VerticalAlignment="Bottom"
+                       Backcolor="{StaticResource ResourceKey=Red}"
+                       ImgSource="../../Icons/outline_remove_circle_white_48dp.png"
+                       BtnText="مسح المنتوج" /> -->
+        </StackPanel>
+        <!--Body-->
+        <DockPanel DockPanel.Dock="Top" 
+                   LastChildFill="True"
+                   FlowDirection="RightToLeft">
+            <!--Sub Title-->
+            <TextBlock Padding="10"
+                           Background="#FF4CAF50"
+                           Foreground="White"
+                           FontSize="16"
+                           TextAlignment="Center"
+                           DockPanel.Dock="Top">المتجر</TextBlock>
+            <!--Filtering Panel-->
+            <Grid DockPanel.Dock="Top" Margin="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="0.8*" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Orientation="Vertical" Grid.Column="0" Margin="5, 0, 5, 0">
+                    <CheckBox Name="chb_code" Style="{StaticResource ResourceKey=chb_input}">رقم المنتج</CheckBox>
+                    <TextBox Name="txt_code" Style="{StaticResource ResourceKey=in_standard}" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Grid.Column="1" Margin="5, 0, 5, 0">
+                    <CheckBox Name="chb_name" Style="{StaticResource ResourceKey=chb_input}">اسم المنتج</CheckBox>
+                    <TextBox Name="txt_name" Style="{StaticResource ResourceKey=in_standard}" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Grid.Column="2" Margin="5, 0, 5, 0">
+                    <CheckBox Name="chb_category" Style="{StaticResource ResourceKey=chb_input}">صنف المنتج</CheckBox>
+                    <ComboBox Name="cb_category" Style="{StaticResource ResourceKey=cb_standard}" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Grid.Column="3" Margin="5, 0, 5, 0">
+                    <CheckBox Name="chb_order" Style="{StaticResource ResourceKey=chb_input}">عدد الوحدات</CheckBox>
+                    <ComboBox Name="cb_order" Style="{StaticResource ResourceKey=cb_standard}">
+                        <ComboBoxItem IsSelected="True">من الأصغر الى الأكبر</ComboBoxItem>
+                        <ComboBoxItem>من الأكبر الى الأصغر</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+                <!--Search Button-->
+                <cntrl:Btn BtnText="ابحث" 
+                           x:Name="btn_search"
+                           HorizontalAlignment="Stretch"
+                           VerticalAlignment="Center"
+                           Margin="10, 10, 0, 10"
+                           Backcolor="#FF1E88E5" 
+                           ImgSource="../../Icons/outline_search_white_48dp.png" 
+                           Grid.Column="4"  />
+                <!-- Reset button -->
+                <cntrl:Btn BtnText="الغاء" 
+                           x:Name="btn_reset"
+                           HorizontalAlignment="Stretch"
+                           VerticalAlignment="Center"
+                           Margin="10, 10, 0, 10"
+                           Backcolor="{StaticResource ResourceKey=Red}" 
+                           ImgSource="../../Icons/sharp_settings_backup_restore_white_48dp.png" 
+                           Grid.Column="5" />
+            </Grid>
+            <!--Data-->
+            <DataGrid DockPanel.Dock="Bottom" 
+                      Name="dg_products"
+                      Margin="20, 0">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Code}" Width="*" Header="رقم المنتج" />
+                    <DataGridTextColumn Binding="{Binding Label}" Width="*" Header="اسم المنتج" />
+                    <DataGridTextColumn Binding="{Binding PriceOut}" Width="*" Header="ثمن البيع" />
+                    <DataGridTextColumn Binding="{Binding PriceIn}" Width="*" Header="ثمن الشراء" />
+                    <DataGridTextColumn Binding="{Binding Quantity}" Width="*" Header="عدد الوحدات" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </DockPanel>
+    </DockPanel>
+</Window>

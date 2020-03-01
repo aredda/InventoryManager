@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="Inventory_Management.Windows.Fragments.HeaderFragment"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d">
+        <DockPanel>
+            <DockPanel.Effect>
+                <DropShadowEffect ShadowDepth="2" Color="#FF1E88E5" Direction="0"/>
+            </DockPanel.Effect>
+            <DockPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF1E88E5" Offset="0"/>
+                    <GradientStop Color="#FF1976D2" Offset="1"/>
+                </LinearGradientBrush>
+            </DockPanel.Background>
+
+            <TextBlock x:Name="txt_name" DockPanel.Dock="Right" Margin="20" FontSize="25" Foreground="White">اسم الشركة</TextBlock>
+
+        <Image  Source="../../Icons/outline_account_circle_white_48dp.png" 
+                    Name="btn_about"
+                    Width="30" Height="30"
+                    Margin="20, 0, 0, 0"
+                    HorizontalAlignment="Left"/>
+
+        <Image  Source="../../Icons/outline_tune_white_48dp.png" 
+                    Name="btn_settings"
+                    Width="30" Height="30"
+                    Margin="10, 0, 10, 0"
+                    HorizontalAlignment="Left"/>
+            
+            <Image  Source="../../Icons/outline_error_outline_white_48dp.png" 
+                    Visibility="Hidden"
+                    Name="btn_notify"
+                    Width="30" Height="30"
+                    HorizontalAlignment="Left"/>
+    </DockPanel>
+</UserControl>

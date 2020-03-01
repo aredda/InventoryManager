@@ -1,0 +1,83 @@
+﻿<Application x:Class="Inventory_Management.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Application.Resources>
+        <SolidColorBrush x:Key="Blue">#FF1E88E5</SolidColorBrush>
+        <SolidColorBrush x:Key="LightBlue">#e3f2fd</SolidColorBrush>
+        <SolidColorBrush x:Key="Red">#d32f2f</SolidColorBrush>
+        <SolidColorBrush x:Key="Green">#4caf50</SolidColorBrush>
+        
+        <LinearGradientBrush x:Key="BlueGradient" EndPoint="0.5, 1" StartPoint="0.5, 0">
+            <GradientStop Color="#FF1E88E5" Offset="0"/>
+            <GradientStop Color="#FF1976D2" Offset="1"/>
+        </LinearGradientBrush>
+        
+        <Style x:Key="lbl_input" TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="#4caf50"/>
+            <Setter Property="FontSize" Value="15"/>
+        </Style>
+
+        <Style x:Key="chb_input" TargetType="CheckBox">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="#4caf50"/>
+            <Setter Property="FontSize" Value="15"/>
+        </Style>
+
+        <Style x:Key="lbl_h1" TargetType="TextBlock" BasedOn="{StaticResource ResourceKey=lbl_input}">
+            <Setter Property="FontSize" Value="25" />
+        </Style>
+        <Style x:Key="lbl_h2" BasedOn="{StaticResource ResourceKey=lbl_h1}" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="20" />
+        </Style>
+        
+        <Style x:Key="in_standard" TargetType="TextBox" >
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Margin" Value="0, 10, 0, 10" />
+        </Style>
+        <Style x:Key="rin_standard" TargetType="RichTextBox" >
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Margin" Value="0, 10, 0, 10" />
+        </Style>
+        <Style x:Key="cb_standard" TargetType="ComboBox" >
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Margin" Value="0, 10, 0, 10" />
+        </Style>
+        <Style x:Key="my-10" TargetType="Control">
+            <Setter Property="Margin" Value="0, 10, 0, 10" />
+        </Style>
+        
+        <Style x:Key="dg_header" TargetType="DataGridColumnHeader">
+            <Setter Property="Background" Value="{StaticResource ResourceKey=BlueGradient}" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Padding" Value="10" />
+            <Setter Property="FontSize" Value="14" />
+        </Style>
+        
+        <Style x:Key="dg_row" TargetType="DataGridRow">
+            <Setter Property="FontSize" Value="12" />
+        </Style>
+        
+        <Style x:Key="dg_scrollbar" TargetType="ScrollBar">
+            <Setter Property="Background" Value="Transparent" />
+        </Style>
+        
+        <Style TargetType="DataGrid">
+            <Setter Property="AutoGenerateColumns" Value="False" />
+            <Setter Property="Foreground" Value="DarkBlue" />
+            <Setter Property="ColumnHeaderStyle" Value="{StaticResource ResourceKey=dg_header}" />
+            <Setter Property="CanUserAddRows" Value="False" />
+            <Setter Property="CanUserDeleteRows" Value="False" />
+            <Setter Property="CanUserResizeRows" Value="False" />
+            <Setter Property="CanUserResizeColumns" Value="False" />
+            <Setter Property="SelectionMode" Value="Single" />
+            <Setter Property="IsReadOnly" Value="True" />
+            <Setter Property="RowStyle" Value="{StaticResource ResourceKey=dg_row}" />
+            <Setter Property="RowHeaderWidth" Value="0" />
+            <Setter Property="Background" Value="White" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="GridLinesVisibility" Value="None" />
+            <Setter Property="AlternatingRowBackground" Value="{StaticResource ResourceKey=LightBlue}" />
+        </Style>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,86 @@
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\bin\Debug\Inventory Management.exe.config
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\bin\Debug\Inventory Management.exe
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\bin\Debug\Inventory Management.pdb
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Inventory Management.csprojResolveAssemblyReference.cache
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\MainWindow.baml
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\MainWindow.g.cs
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\App.g.cs
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Inventory Management_MarkupCompile.cache
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Inventory Management.g.resources
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Inventory_Management.Properties.Resources.resources
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Inventory Management.csproj.GenerateResource.Cache
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Inventory Management.exe
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Inventory Management.pdb
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\ProductWindow.baml
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\ProductWindow.g.cs
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\App.baml
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\CategoryWindow.baml
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\CategoryWindow.g.cs
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\Fragments\HeaderFragment.baml
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\Fragments\HeaderFragment.g.cs
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\StoreWindow.g.cs
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Inventory Management_MarkupCompile.lref
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\StoreWindow.baml
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\Controls\Btn.baml
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\Controls\Btn.g.cs
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\SellWindow.g.cs
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\SellWindow.baml
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\HistoryWindow.g.cs
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\HistoryWindow.baml
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\bin\Debug\Inventory Management.exe.config
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Inventory Management.exe
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Inventory Management.pdb
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\bin\Debug\Inventory Management.exe
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\bin\Debug\Inventory Management.pdb
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Inventory Management.csprojResolveAssemblyReference.cache
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\Controls\Btn.baml
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\Fragments\HeaderFragment.baml
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\App.baml
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\MainWindow.g.cs
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\CategoryWindow.g.cs
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\Controls\Btn.g.cs
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\Fragments\HeaderFragment.g.cs
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\HistoryWindow.g.cs
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\ProductWindow.g.cs
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\SellWindow.g.cs
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\StoreWindow.g.cs
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\App.g.cs
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Inventory Management_MarkupCompile.cache
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Inventory Management_MarkupCompile.lref
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\MainWindow.baml
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\CategoryWindow.baml
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\HistoryWindow.baml
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\ProductWindow.baml
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\SellWindow.baml
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\StoreWindow.baml
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Inventory Management.g.resources
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Inventory_Management.Properties.Resources.resources
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Inventory Management.csproj.GenerateResource.Cache
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\NotificationWindow.g.cs
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\NotificationWindow.baml
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Inventory Management.csproj.ResolveComReference.cache
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\SettingsWindow.g.cs
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\SettingsWindow.baml
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\bin\Debug\Inventory Management.exe.manifest
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\bin\Debug\Inventory Management.application
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Inventory Management.exe.manifest
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Inventory Management.application
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\LoginWindow.g.cs
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\LoginWindow.baml
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\CreditsWindow.baml
+C:\Users\aredd\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\CreditsWindow.g.cs
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Inventory Management.csproj.ResolveComReference.cache
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\bin\Debug\Inventory Management.exe.manifest
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\bin\Debug\Inventory Management.application
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\CreditsWindow.baml
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\CreditsWindow.g.cs
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\LoginWindow.g.cs
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\NotificationWindow.g.cs
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\SettingsWindow.g.cs
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\LoginWindow.baml
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\NotificationWindow.baml
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Windows\SettingsWindow.baml
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Inventory Management.exe.manifest
+C:\Users\Om-Ar\Dropbox\VS Projects\Inventory Management\Inventory Management\obj\Debug\Inventory Management.application
